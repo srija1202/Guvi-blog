@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Reset and Base Styles */
+body {
+  font-family: "dm sans", Sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  margin: 0;
+  flex: 1;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  flex: 1;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Navbar Styles */
+.navbar {
+  background-color: #fff; /* Navbar background color */
+  border-bottom: 1px solid #ddd; /* Bottom border */
+}
+
+.navbar-brand {
+  margin-left: 1rem; /* Adjust as needed */
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333; /* Brand text color */
+}
+
+.navbar-nav {
+  margin-left: auto; /* Push nav links to the right */
+}
+
+.nav-link {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  padding: 10px 24px !important;
+  line-height: 20px;
+  background-image: linear-gradient(to right, #00c6ff, #0072ff, #00c6ff); /* Default gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-link.fullstack {
+  background-image: linear-gradient(to right, #ff8008, #ffc837, #ff8008); /* Full Stack gradient */
+}
+
+.nav-link.datascience {
+  background-image: linear-gradient(to right, #614385, #516395, #614385); /* Data Science gradient */
+}
+
+.nav-link.cybersecurity {
+  background-image: linear-gradient(to right, #bc4e9c, #f80759, #bc4e9c); /* Cyber Security gradient */
+}
+
+.nav-link.career {
+  background-image: linear-gradient(to right, #cc2b5e, #753a88, #cc2b5e); /* Career gradient */
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link.active {
+  color: #0aaa01 !important; /* Text color on hover/active */
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-link:hover,
+  .nav-link:active,
+  .nav-link.active {
+    color: #0aaa01 !important;
+    border-bottom: 2px solid #0aaa01; /* Bottom border on hover/active */
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+/* Card Styles */
+.card {
+  font-family: "dm sans", Sans-serif;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.46); /* Shadow on hover */
+}
+
+.card-img-top {
+  height: 200px !important; /* Adjust as needed */
+}
+
+.card-title {
+  color: #101010 !important; /* Title color */
+  font-size: 21px;
+}
+
+.card-text {
+  margin: 0;
+  margin-bottom: 6px;
+  line-height: 1.5em;
+  font-size: 14px;
+  color: #777; /* Text color */
+}
+
+.card-sm-txt {
+  color: #0aaa01; /* Small text color */
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.txt {
+  word-wrap: break-word;
+  font-size: 12px;
+  color: #adadad !important;
+  font-weight: 400;
+  word-spacing: 1px;
+}
+
+.guvi{
+  margin-left: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: x-large;
+  color: rgb(13,186,75);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #ffffff; /* Footer background color */
+  color: #707070; /* Text color */
+  padding: 1% 0; /* Padding */
+  text-align: center;
+  width: 100%;
+  margin-top: auto; /* Ensures footer stays at the bottom */
+  border-top: 1px solid lightgrey; /* Top border */
 }
